@@ -1,0 +1,13 @@
+<div class="blog-container">
+    <div class="blog">
+      <h2 class="blog-title">Welcome to Our Blog</h2>
+      <div class="blog-posts">
+        <div class="blog-post" *ngFor="let post of blogPosts">
+          <h3>{{ post.title }}</h3>
+          <p>{{ post.content }}</p>
+          <small>Published on: {{ post.publishedDate }}</small>
+        </div>
+      </div>
+    </div>
+  </div>
+  
