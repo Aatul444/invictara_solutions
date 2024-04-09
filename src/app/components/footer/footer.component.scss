@@ -1,0 +1,125 @@
+// info section
+.info_section {
+    background-color: #232323;
+    color: white;
+    padding: 90px 0 45px 0;
+  
+    h5 {
+      margin-bottom: 25px;
+      font-size: 24px;
+    }
+  
+    .info_insta {
+  
+      .Info_container {
+        &>div {
+          display: flex;
+          gap: 15px;
+          
+        }
+      div>p{
+        font-size: 14px;
+        
+      }
+      div>span{
+        font-size: 11px;
+        line-height: 10px;
+      }
+  
+        img {
+          width: 100px;
+          height: 80px;
+          
+        }
+  
+        .insta-box {
+          margin: 5px;
+          display: flex;
+          align-items: stretch;
+          background-color: white;
+          padding: 10px 20px;
+        }
+  
+  
+      }
+    }
+  
+    .info_contact {
+      .img-box {
+        width: 35px;
+        display: flex;
+        justify-content: center;
+      }
+  
+      p {
+        margin: 0;
+      }
+  
+      >div {
+        display: flex;
+        align-items: center;
+        margin: 20px 0;
+  
+        img {
+          height: auto;
+          margin-right: 12px;
+        }
+      }
+    }
+  
+    .info_form {
+      form {
+        input {
+          outline: none;
+          width: 100%;
+          padding: 7px 10px;
+        }
+  
+        button {
+          display: inline-block;
+         padding: 8px 30px;
+         background-color: #fbca47;
+         border: 1px solid #fbca47;
+         color: white;
+          margin-top: 15px;
+          text-transform: uppercase;
+          font-size: 15px;
+        }
+      }
+  
+      .social_box {
+        margin-top: 35px;
+        width: 100%;
+        display: flex;
+  
+        a {
+          margin-right: 25px;
+        }
+      }
+    }
+  
+  }
+  
+  // end info section
+  
+  
+  /* footer section*/
+  .footer_section {
+    background-color: #232323;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .footer_section p {
+    padding: 20px 65px;
+    color: #fbfcfd;
+    margin: 0 auto;
+    text-align: center;
+    border-top: 1px solid white;
+  }
+  
+  .footer_section a {
+    color: #fbfcfd;
+  }
+  

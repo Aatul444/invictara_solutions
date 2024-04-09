@@ -1,0 +1,64 @@
+.contact_section{
+    margin-top: 150px;
+}
+.contact_section .heading_container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  .contact_section .contact-form {
+    padding: 25px;
+    border-radius: 20px;
+  }
+  
+  .contact_section .contact-form input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    width: 100%;
+    margin: 15px 0;
+    padding: 10px 20px;
+    border: 1px solid rgba(255, 254, 254, 0.4);
+    border-radius: 30px;
+  }
+  
+  .contact_section .contact-form input.input_message {
+    height: 175px;
+  }
+  
+  .contact_section .contact-form input::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.4);
+  }
+  
+  .contact_section .contact-form input:-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.4);
+  }
+  
+  .contact_section .contact-form input::-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.4);
+  }
+  
+  .contact_section .contact-form input::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+  }
+  
+  .contact_section .contact-form button {
+    border: none;
+    outline: none;
+    padding: 12px 50px;
+    text-transform: uppercase;
+    margin-top: 25px;
+    background-color: #fec913;
+    color: #fff;
+    border-radius: 30px;
+  }
+  
+  .contact_section .map_img-box {
+    width: 80%;
+    margin: 25px auto 0 auto;
+  }
+  
+  .contact_section .map_img-box img {
+    width: 100%;
+  }

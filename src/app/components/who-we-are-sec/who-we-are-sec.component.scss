@@ -1,0 +1,34 @@
+.who_section .row {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+            margin-top: 150px;
+  }
+  
+  .who_section .img-box img {
+    width: 500px;
+    height: 400px;
+  }
+  
+  .who_section .detail-box {
+    margin-left: 65px;
+  }
+  
+  .who_section .detail-box p {
+    margin-top: 35px;
+  }
+  
+  .who_section .detail-box a {
+    display: inline-block;
+    padding: 8px 30px;
+    background-color: #353434;
+    border: 1px solid #353434;
+    color: #ffffff;
+    border-radius: 20px 20px 0 20px;
+    margin-top: 35px;
+  }
+  
+  .who_section .detail-box a:hover {
+    background-color: transparent;
+    color: #353434;
+  }
