@@ -1,6 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import moment from 'moment';
+import { FirebaseFunctionsService } from '../../services/firebase-functions.service';
 
 @Component({
   selector: 'app-blogs',
@@ -10,17 +12,15 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './blogs.component.scss'
 })
 export class BlogsComponent {
-  blogPosts = [
-    {
-      title: 'First Post',
-      content: 'This is the content of the first post.',
-      publishedDate: '2024-03-30'
-    },
-    {
-      title: 'Second Post',
-      content: 'This is the content of the second post.',
-      publishedDate: '2024-04-01'
-    },
-    // Add more blog posts as needed
-  ];
+  blogPosts: any = [];
+  constructor( private firebaseService: FirebaseFunctionsService ) {
+    this.getBlogs()
+  }
+  getBlogs() {
+    const docId = moment().format('MMMMYYYY');
+    const blogsDate = moment().format('DD/MM/YYYY')
+
+  }
+
+
 }

@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Router, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -10,5 +10,15 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
+  burgerToggle=false;
+  constructor(private router:Router){
+
+  }
+  onBurger(){
+    this.burgerToggle=!this.burgerToggle
+  }
+  handleRoute(route:string){
+    this.router.navigate([route])
+  }
 
 }

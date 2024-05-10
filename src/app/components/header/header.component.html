@@ -1,20 +1,19 @@
 <header class="header" id="header">
    <nav class="navbar container">
-      <a class="brand" routerLink="/">INVICTARA <span>Solutions</span> </a>
-      <div class="burger" id="burger">
+      <a class="brand" routerLink="/" (click)="handleRoute('')">INVICTARA <span>Solutions</span> </a>
+      <div class="burger" id="burger" (click)="onBurger()">
          <span class="burger-line"></span>
          <span class="burger-line"></span>
          <span class="burger-line"></span>
       </div>
       <div class="menu" id="menu">
          <ul class="menu-inner">
-            <li class="menu-item" routerLink="/"><a class="menu-link">Home</a></li>
-            <li class="menu-item" routerLink="/features"><a class="menu-link">Feature</a></li>
-            <li class="menu-item" routerLink="/products"><a class="menu-link">Product</a></li>
-            <li class="menu-item" routerLink="/blogs"><a class="menu-link">Blog</a></li>
-            <li class="menu-item" routerLink="/support"><a class="menu-link">Support</a></li>
+            <li class="menu-item" routerLink="/"><a class="menu-link" (click)="handleRoute('')">Home</a></li>
+            <li class="menu-item" routerLink="/features"><a class="menu-link" (click)="handleRoute('services')">Services</a></li>
+            <li class="menu-item" routerLink="/products"><a class="menu-link" (click)="handleRoute('products')">Products</a></li>
+            <li class="menu-item" routerLink="/blogs"><a class="menu-link" (click)="handleRoute('blogs')">Blog</a></li>
+            <li class="menu-item" routerLink="/support"><a class="menu-link" (click)="handleRoute('support')">Support</a></li>
          </ul>
       </div>
-      <a class="menu-block">Discover</a>
    </nav>
 </header>
