@@ -18,7 +18,8 @@ export class HeaderComponent {
     this.burgerToggle=!this.burgerToggle
   }
   handleRoute(route:string){
-    this.router.navigate([route])
+    this.burgerToggle = false;
+    this.router.navigate([route]);
   }
 
 }

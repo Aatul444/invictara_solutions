@@ -1,5 +1,5 @@
 <header class="header" id="header">
-   <nav class="navbar container">
+   <nav class="navbar container" style="position: relative;">
       <a class="brand" routerLink="/" (click)="handleRoute('')">INVICTARA <span>Solutions</span> </a>
       <div class="burger" id="burger" (click)="onBurger()">
          <span class="burger-line"></span>
@@ -7,7 +7,7 @@
          <span class="burger-line"></span>
       </div>
       <div class="menu" id="menu">
-         <ul class="menu-inner">
+         <ul class="menu-inner" style="cursor: pointer;">
             <li class="menu-item" routerLink="/"><a class="menu-link" (click)="handleRoute('')">Home</a></li>
             <li class="menu-item" routerLink="/features"><a class="menu-link" (click)="handleRoute('services')">Services</a></li>
             <li class="menu-item" routerLink="/products"><a class="menu-link" (click)="handleRoute('products')">Products</a></li>
@@ -16,4 +16,11 @@
          </ul>
       </div>
    </nav>
+   <div class="mobile_menu" *ngIf="burgerToggle">
+      <span (click)="handleRoute('')">Home</span>
+      <span (click)="handleRoute('services')">Services</span>
+      <span (click)="handleRoute('products')">Products</span>
+      <span (click)="handleRoute('blogs')">Blog</span>
+      <span (click)="handleRoute('support')">Support</span>
+   </div>
 </header>
