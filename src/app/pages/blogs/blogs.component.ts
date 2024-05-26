@@ -2,7 +2,8 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import moment from 'moment';
-import { FirebaseFunctionsService } from '../../services/firebase-functions.service';
+import { FirebaseService } from '../../services/firebase-services/firebase.service';
+import { AngularFirestore } from '@angular/fire/compat/firestore';
 
 @Component({
   selector: 'app-blogs',
@@ -13,14 +14,13 @@ import { FirebaseFunctionsService } from '../../services/firebase-functions.serv
 })
 export class BlogsComponent {
   blogPosts: any = [];
-  constructor( private firebaseService: FirebaseFunctionsService ) {
-    this.getBlogs()
+
+  constructor(private afs: AngularFirestore) {
+    this.afs.collection('BLOGS').get().subscribe(res=>{console.log(res)})
   }
-  getBlogs() {
+ 
+  async getBlogs() {
     const docId = moment().format('MMMMYYYY');
-    const blogsDate = moment().format('DD/MM/YYYY')
-
+    const blogsDate = moment().format('DD/MM/YYYY');
   }
-
-
 }
